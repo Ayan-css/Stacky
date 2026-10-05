@@ -2,7 +2,7 @@
 
 A polished, local-first note-taking app built with Angular. Your notes live in your browser, so your data stays yours.
 
-**Live demo:** [stacky-tan.vercel.app](https://stacky-tan.vercel.app)
+**Live demo:** [stackynotes.vercel.app](https://stackynotes.vercel.app)
 
 ---
 
