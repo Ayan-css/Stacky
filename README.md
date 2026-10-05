@@ -1,59 +1,100 @@
-# StickyApp
+# Stacky
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.2.1.
+A polished, local-first note-taking app built with Angular. Your notes live in your browser, so your data stays yours.
 
-## Development server
+**Live demo:** [stacky-tan.vercel.app](https://stacky-tan.vercel.app)
 
-To start a local development server, run:
+---
 
-```bash
-ng serve
-```
+## Overview
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Stacky is a fast, distraction-free notes app that takes a **local-storage-first** approach to privacy. Notes are stored on your device rather than sent to a server, so there is no account to create and no backend holding your data.
 
-## Code scaffolding
+## Features
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+<!-- Edit this list to match what's actually shipped -->
 
-```bash
-ng generate component component-name
-```
+- 📝 Create, edit, and delete notes
+- 🔒 Local-storage-first persistence: your data never leaves your browser
+- ⚡ Fast, responsive UI built on modern Angular
+- 🎨 Clean, polished interface
+- 🚀 Zero-config deploys on Vercel
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Tech Stack
 
-```bash
-ng generate --help
-```
+| Layer | Tech |
+| --- | --- |
+| Framework | [Angular](https://angular.dev) 22 |
+| Language | TypeScript 6 |
+| Reactivity | RxJS 7.8 |
+| Testing | [Vitest](https://vitest.dev) + jsdom |
+| Formatting | Prettier |
+| Hosting | Vercel |
 
-## Building
+## Getting Started
 
-To build the project run:
+### Prerequisites
 
-```bash
-ng build
-```
+- [Node.js](https://nodejs.org) (current LTS recommended)
+- npm
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
+### Installation
 
 ```bash
-ng e2e
+git clone https://github.com/Ayan-css/Stacky.git
+cd Stacky
+npm install
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+### Run the dev server
 
-## Additional Resources
+```bash
+npm start
+```
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Open [http://localhost:4200](http://localhost:4200). The app reloads automatically when you change source files.
+
+## Scripts
+
+| Command | Description |
+| --- | --- |
+| `npm start` | Start the dev server (`ng serve`) |
+| `npm run build` | Production build into `dist/` |
+| `npm run watch` | Rebuild on change (development config) |
+| `npm test` | Run unit tests with Vitest |
+
+## Project Structure
+
+```
+Stacky/
+├── public/            # Static assets
+├── src/               # Application source
+├── angular.json       # Angular workspace config
+├── vercel.json        # Vercel deployment config
+├── tsconfig*.json     # TypeScript configs
+└── package.json
+```
+
+## Data & Privacy
+
+Stacky stores notes in the browser's local storage:
+
+- No sign-up, no server, no tracking of your notes
+- Data persists per browser and device
+- Clearing site data in your browser will erase your notes, so back up anything important
+
+## Deployment
+
+The app is configured for [Vercel](https://vercel.com). Connect the repository and Vercel will pick up `vercel.json` and build with `ng build`.
+
+## Contributing
+
+Issues and pull requests are welcome. For larger changes, please open an issue first to discuss what you'd like to change.
+
+## License
+
+No license has been specified yet. Add a `LICENSE` file (for example, MIT) to clarify usage.
+
+---
+
+Built by [Ayan](https://github.com/Ayan-css)
